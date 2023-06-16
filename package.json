@@ -1,0 +1,28 @@
+{
+  "name": "markdown-it-api",
+  "version": "1.0.0",
+  "description": "markdown to html severless api",
+  "main": "./api/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RavelloH/markdown-it-api.git"
+  },
+  "keywords": [
+    "markdown",
+    "html",
+    "api"
+  ],
+  "author": "RavelloH",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RavelloH/markdown-it-api/issues"
+  },
+  "homepage": "https://github.com/RavelloH/markdown-it-api#readme",
+  "dependencies": {
+    "markdown-it": "^13.0.1",
+    "request": "^2.88.2"
+  }
+}
