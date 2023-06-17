@@ -12,6 +12,16 @@ https://markdown.api.ravelloh.top/?url=https://raw.githubusercontent.com/Ravello
 ```
 这将把https://raw.githubusercontent.com/RavelloH/virgule.js/main/README.md 中的markdown转换为html  
 
+另外提供一个异步请求函数，以供调用此API
+```
+async function getMarkdownToHTML(url) {
+    let data = await (await fetch('https://markdown.api.ravelloh.top/?url='+url)).text()
+    console.log(data)
+}
+
+// use
+getMarkdownToHTML('https://raw.githubusercontent.com/RavelloH/markdown-it-api/main/README.md')
+```
 ## 效果 
 生成效果:
 ```
