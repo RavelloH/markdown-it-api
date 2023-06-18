@@ -1,7 +1,6 @@
-const MarkdownIt = require('markdown-it')({
+var md = require('markdown-it')({
   html: true
 });
-const md = new MarkdownIt();
 const request = require('request');
 
 module.exports = (req, res) => {
