@@ -1,4 +1,6 @@
-const MarkdownIt = require('markdown-it');
+const MarkdownIt = require('markdown-it')({
+  html: true
+});
 const md = new MarkdownIt();
 const request = require('request');
 
