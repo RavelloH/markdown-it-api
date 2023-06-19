@@ -21,7 +21,7 @@ module.exports = (req, res) => {
     request(options, function (error, response) {
         if (error) throw new Error(error);
         res.writeHead(200, {
-            "Content-Type": "application/json"
+            "Content-Type": "application/html"
         });
         res.write(md.render(response.body));
         res.end();
